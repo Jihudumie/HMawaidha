@@ -1,5 +1,5 @@
 {
-  "name": "Telegram Torrent Leecher",
+  "name": "Mawaidha 3",
   "description": "A Telegram Torrent (and youtube-dl) Leecher based on Pyrogram. Powered by @ThankTelegram!",
   "keywords": [
     "telegram",
@@ -24,11 +24,11 @@
     },
     "APP_ID": {
       "description": "Get this value from https://my.telegram.org",
-      "value": ""
+      "value": "1434649"
     },
     "API_HASH": {
       "description": "Get this value from https://my.telegram.org",
-      "value": ""
+      "value": "19a3566e34b90056e7e02025daba02ee"
     },
     "TG_BOT_TOKEN": {
       "description": "get this value from @BotFather",
@@ -36,7 +36,7 @@
     },
     "AUTH_CHANNEL": {
       "description": "should be an integer. The BOT API ID of the Telegram Group, where the Leecher should work.",
-      "value": ""
+      "value": "-1001475929030"
     },
     "CHUNK_SIZE": {
       "description": "should be an integer",
