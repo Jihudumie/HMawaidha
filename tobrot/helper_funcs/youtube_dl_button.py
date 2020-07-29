@@ -39,7 +39,7 @@ async def youtube_dl_call_back(bot, update):
     if current_user_id != current_touched_user_id:
         await bot.answer_callback_query(
             callback_query_id=update.id,
-            text="Wewe Ni Nani Tena? 🤪🤔🤔🤔",
+            text="Hii Options Siyo Yako 🤪🤔",
             show_alert=True,
             cache_time=0
         )
@@ -89,20 +89,20 @@ async def youtube_dl_call_back(bot, update):
     if "noyes.in" in youtube_dl_url or "tor.checker.in" in youtube_dl_url:
         await bot.edit_message_text(
             chat_id=update.message.chat.id,
-            text="😡😡 <i>please do not abuse this <u>FREE</u> service</i> 🌚",
+            text="😡 <i>Tafadhari Usitumie Vibaya <u>Huduma</u> Hii ya  BURE</i> 🌚",
             message_id=update.message.message_id
         )
         return
     if "drive.google.com" in youtube_dl_url and youtube_dl_format != "source":
         await bot.edit_message_text(
             chat_id=update.message.chat.id,
-            text="<i>please do not abuse this <u>FREE</u> service</i>",
+            text="<i>tafadhali usitumie vibaya huduma hii ya BURE</i>",
             message_id=update.message.message_id
         )
         return
     #
     await bot.edit_message_text(
-        text="☹ Nina Download",
+        text="❍ Nina Download",
         chat_id=update.message.chat.id,
         message_id=update.message.message_id
     )
