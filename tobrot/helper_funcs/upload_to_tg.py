@@ -114,7 +114,7 @@ async def upload_single_file(message, local_file_name, caption_str):
             thumb_image_path = await take_screen_shot(
                 local_file_name,
                 os.path.dirname(os.path.abspath(local_file_name)),
-                (duration / 10)
+                (duration / 2)
             )
             # get the correct width, height, and duration for videos greater than 10MB
             if os.path.exists(thumb_image_path):
@@ -153,7 +153,7 @@ async def upload_single_file(message, local_file_name, caption_str):
                 reply_to_message_id=message.reply_to_message.message_id,
                 progress=progress_for_pyrogram,
                 progress_args=(
-                    "Nina upload",
+                    "trying to upload",
                     message,
                     start_time
                 )
@@ -161,7 +161,7 @@ async def upload_single_file(message, local_file_name, caption_str):
             os.remove(thumb)
         elif local_file_name.upper().endswith(("MP3", "M4A", "M4B", "FLAC", "WAV")):
             metadata = extractMetadata(createParser(local_file_name))
-            duration = 30
+            duration = 0
             title = ""
             artist = ""
             if metadata.has("duration"):
