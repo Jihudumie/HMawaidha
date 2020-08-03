@@ -37,7 +37,7 @@ async def help_message_f(client, message):
     message_id = 99
     # display the /help message
     await message.reply_text(
-        f"   Karibu: \nMimi ni <a href='https://t.me/c/{channel_id}/{message_id}'>Uploader⬆</a> Nina Upload Audio/Video N.k\n\Reply Link kisha Tumia Command \n👇Hizin1. /ytdl\n2. /leech",
+        f"Karibu: \nMimi ni <a href='https://t.me/c/{channel_id}/{message_id}'>Uploader ⬆</a> Nina Upload Audio/Video N.k\n\nReply Link kisha Tumia Command \n\nHizi👇\n1. /ytdl Kupata Option au Link zote za Youtube\n2. /leech Kwa Link za Moja kwa Mija Direct",
         quote=True
     )
 
