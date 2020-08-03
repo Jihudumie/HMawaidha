@@ -37,7 +37,7 @@ async def help_message_f(client, message):
     message_id = 99
     # display the /help message
     await message.reply_text(
-        f"_Assalaam Aleykum _ {mention}\n\nKaribu Katika {chatname}\n\n_Group Hili ni Kwa Ajili ya Kuchukua Habari Na Kuwa sambazia Waja Katika Ma, group Na Channel_",
+        f"Karibu: Mimi ni <a href='https://t.me/c/{channel_id}/{message_id}'>Uploader⬆</a> Nina Upload Audio/Video N.k\n\n1. /ytdl\n2. /leech",
         quote=True
     )
 
