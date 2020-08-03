@@ -39,7 +39,7 @@ async def youtube_dl_call_back(bot, update):
     if current_user_id != current_touched_user_id:
         await bot.answer_callback_query(
             callback_query_id=update.id,
-            text="Hii Options Siyo Yako 🤪🤔",
+            text="Mja Hii **Options** Siyo Yako 🤪🤔",
             show_alert=True,
             cache_time=0
         )
@@ -218,18 +218,18 @@ async def youtube_dl_call_back(bot, update):
             message_id = final_response[key_f_res_se]
             channel_id = str(AUTH_CHANNEL)[4:]
             private_link = f"https://t.me/c/{channel_id}/{message_id}"
-            message_to_send += "👉 <a href='"
+            message_to_send += "➪ <a href='"
             message_to_send += private_link
             message_to_send += "'>"
             message_to_send += local_file_name
             message_to_send += "</a>"
             message_to_send += "\n"
         if message_to_send != "":
-            mention_req_user = f"<a href='tg://user?id={user_id}'>Your Requested Files</a>  @Huduma\n\n"
+            mention_req_user = f"<a href='tg://user?id={user_id}'>Your Requested Files</a>  @An0002Bot\n\n"
             message_to_send = mention_req_user + message_to_send
-            message_to_send = message_to_send + "\n\n" + "☻ @Mawaidha1"
+            message_to_send = message_to_send + "\n\n" + "➪ @Mawaidha1"
         else:
-            message_to_send = "<i>Ime FAILED</i> Ku upload files Lako. 😞😞"
+            message_to_send = "<i>Ime FAILED</i> Ku upload files Lako."
         await update.message.reply_to_message.reply_text(
             text=message_to_send,
             quote=True,
