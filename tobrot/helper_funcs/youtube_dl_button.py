@@ -39,7 +39,7 @@ async def youtube_dl_call_back(bot, update):
     if current_user_id != current_touched_user_id:
         await bot.answer_callback_query(
             callback_query_id=update.id,
-            text="Ndugu Hii 𝐎𝐩𝐭𝐢𝐨𝐧 Siyo Yako 🤪🤔",
+            text="﷽ Ndugu Hii 𝐎𝐩𝐭𝐢𝐨𝐧 Siyo Yako 🤪🤔",
             show_alert=True,
             cache_time=0
         )
@@ -225,7 +225,7 @@ async def youtube_dl_call_back(bot, update):
             message_to_send += "</a>"
             message_to_send += "\n"
         if message_to_send != "":
-            mention_req_user = f"<a href='tg://user?id={user_id}'>Your Requested Files</a>\n\n  @An0002Bot"
+            mention_req_user = f"<a href='tg://user?id={user_id}'>Your Requested Files</a>\n\n ↻ @An0002Bot\n\n "
             message_to_send = mention_req_user + message_to_send
             message_to_send = message_to_send + "\n\n" + "➪ @Mawaidha1"
         else:
