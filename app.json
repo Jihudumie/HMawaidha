@@ -24,11 +24,11 @@
     },
     "APP_ID": {
       "description": "Get this value from https://my.telegram.org",
-      "value": "1434649"
+      "value": ""
     },
     "API_HASH": {
       "description": "Get this value from https://my.telegram.org",
-      "value": "19a3566e34b90056e7e02025daba02ee"
+      "value": ""
     },
     "TG_BOT_TOKEN": {
       "description": "get this value from @BotFather",
@@ -36,7 +36,7 @@
     },
     "AUTH_CHANNEL": {
       "description": "should be an integer. The BOT API ID of the Telegram Group, where the Leecher should work.",
-      "value": "-1001475929030"
+      "value": ""
     },
     "CHUNK_SIZE": {
       "description": "should be an integer",
@@ -56,6 +56,18 @@
     "MAX_TIME_TO_WAIT_FOR_TORRENTS_TO_START": {
       "description": "should be an integer. Number of seconds to wait before cancelling a torrent.",
       "required": false
+    },
+    "FINISHED_PROGRESS_STR": {
+      "description": "should be a single character.",
+      "required": false
+    },
+    "UN_FINISHED_PROGRESS_STR": {
+      "description": "should be a single character.",
+      "required": false
+    },
+    "TG_OFFENSIVE_API": {
+      "description": "should be an URL accepting the FormParams {i}, {m}, and {t}",
+      "required": false
     }
   },
   "addons": [
@@ -63,7 +75,7 @@
   "buildpacks": [{
     "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
   }, {
-    "url": "https://github.com/amivin/aria2-heroku"
+    "url": "https://github.com/SayanthD/aria2-heroku"
   }, {
     "url": "heroku/python"
   }],
